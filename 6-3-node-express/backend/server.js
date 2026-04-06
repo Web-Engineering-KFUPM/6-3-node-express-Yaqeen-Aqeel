@@ -20,6 +20,7 @@ app.get("/", (req, res) => {
    });
 
 // TODO 6.2: Create "/api/quote" route
+import { getRandomQuote } from "./quotes.js";
 
 app.get("/api/quote", (req, res) => {
      const quote = getRandomQuote();
